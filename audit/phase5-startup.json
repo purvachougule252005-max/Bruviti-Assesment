@@ -1,0 +1,56 @@
+{
+  "command": "python run.py",
+  "clone": "tmp/phase5-clean-clone",
+  "initial_commit": "4fc377e",
+  "new_virtual_environment": true,
+  "existing_pip_cache_used": true,
+  "platform": "Windows / Python 3.13.3",
+  "http_checks": {
+    "/health": {
+      "status": 200,
+      "bytes": 15
+    },
+    "/": {
+      "status": 200,
+      "bytes": 6579
+    },
+    "/static/app.js": {
+      "status": 200,
+      "bytes": 12344
+    },
+    "/api/validation": {
+      "status": 200,
+      "bytes": 60
+    },
+    "/api/parts/fa-30019": {
+      "status": 200,
+      "bytes": 373
+    },
+    "/api/parts/AS-40210/paths": {
+      "status": 404,
+      "bytes": 38
+    },
+    "/api/serial/2.5": {
+      "status": 422,
+      "bytes": 56
+    }
+  },
+  "csv_bytes_match_original_zip_in_both_checkouts": true,
+  "sha256": {
+    "bom.csv": "4c35a262ea4c9e9b095056bf4cbf79bc07b126aefe26a18afb0ff0a663bec6cf",
+    "parts_master.csv": "6e82f21fb97aeea090204ad38722f6eaa6039fcae61ea33f56b6d40a760cfbc9",
+    "service_parts.csv": "209d265e2cb67140c2b4fabbaaa66d6e45d86f8a4860ad36e255f3cd0b840bc5"
+  },
+  "limits": "Same computer and installed Python, new checkout and venv; not a new OS or Linux/macOS check.",
+  "clean_clone_tests": {
+    "passed": 155,
+    "duration_seconds": 5.94,
+    "command": ".venv/Scripts/python.exe -m pytest -q --tb=short"
+  },
+  "pip_check": "No broken requirements found.",
+  "installed_restart_with_PIP_NO_INDEX_1": {
+    "pip_invoked": false,
+    "health_status": 200
+  },
+  "initial_custom_tmp_test_failure": "47 passed, 108 setup errors: missing tmp parent. Resolved by the documented default temporary-directory invocation."
+}

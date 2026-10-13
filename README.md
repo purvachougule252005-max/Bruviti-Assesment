@@ -1,6 +1,6 @@
 # PartTrace - Machine Parts Explorer
 
-Service parts catalogue for the AM-700 machine. **Current stage: Phase 4 demo complete.** The API and demo page run from the same process on port 8000. The single-command install/start launcher and final delivery checks remain pending.
+Service parts catalogue for the AM-700 machine. The API and demo page run from the same process on port 8000. Local implementation and verification are complete, with specific verification limits listed below. Publication and submission are separate user-controlled steps.
 
 ## Requirements
 
@@ -14,17 +14,19 @@ The supplied files belong at repository-root `data/`:
 
 Replacing these files and loading a new catalogue applies the same rules to the new export. Source files are never modified. No external catalogue data is used.
 
-## Install and run the API
+## Install and start with one command
 
-From the repository root on Windows PowerShell:
+From the repository root, with Python 3.11+ installed:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m uvicorn parttrace.api:app --host 127.0.0.1 --port 8000 --lifespan on
+python run.py
 ```
 
-On macOS/Linux use `python3 -m venv .venv`, then `.venv/bin/python` in place of `.\.venv\Scripts\python.exe`. Stop the server with Ctrl+C. These steps have been exercised in the existing development environment; a single-command fresh-clone launcher and clean-environment verification remain for Phase 5.
+On macOS/Linux use `python3 run.py` if Python is named `python3`; the OS must provide Python's `venv`/pip support. The launcher creates an isolated `.venv`, installs pinned service dependencies, and starts Uvicorn at **http://127.0.0.1:8000/**. Stop it with Ctrl+C. Port 8000 must be free. No environment variables or credentials are needed.
+
+First-time dependency installation needs a package index or populated pip cache. Later starts skip installation when the pinned packages are present; the running service needs no network. The launcher resolves paths from its own file, including paths with spaces. Recreate `.venv` when changing Python versions.
+
+This exact command was verified in a fresh local Git clone with a new virtual environment on Windows/Python 3.13.3. pip reused cached wheels. Linux/macOS and a completely new operating-system image were not exercised. See `audit/phase5-startup.json`.
 
 The catalogue loads once before the server accepts requests. Relevant data conflicts abort startup. Restart after replacing `data/`. `GET /health` returns HTTP 200 with `{"status":"ok"}` once loading has succeeded. A request without an available catalogue receives 503.
 
@@ -78,9 +80,23 @@ python3 -m venv .venv
 
 Dependency installation may use the network. Once dependencies are installed, the tests run without external network access. HTTP tests use an in-process ASGI client. A fixture blocks application socket connections and DNS resolution, permitting only the internal socket pair that Windows needs to create an async event loop. Regression tests ensure this exception cannot enable normal application connections.
 
-The latest verified invocation used `--basetemp=tmp/pytest-phase4-final` to keep temporary files inside the ignored `tmp/` directory. Use a dedicated directory because pytest manages its contents. This Windows execution sandbox also blocks the async loop's internal loopback connection, so the test run required execution outside that sandbox; the test network guard remained enabled.
+The documented `pytest -q` command works from a fresh clone. For a custom `--basetemp`, create its parent directory first and use a dedicated location because pytest manages its contents. This Windows execution sandbox blocks the async loop's internal loopback connection, so verification ran outside that sandbox; the test network guard remained enabled.
 
-Latest run: **135 passed** (the prior 122 engine/API/guard cases plus 13 demo cases). Browser interactions and phone/desktop layouts were checked; see `audit/phase4-verification.md`. Assets/API were tested with application network connections blocked, but the computer's network adapter was not disabled. Final performance, machine-wide offline, and clean-startup verification remain pending.
+Final suite: **155 passed**, including 20 generated exports checked through HTTP against independent forward path enumeration. It also passed in the clean clone (5.94 seconds). Browser interactions and phone/desktop layouts were checked; see `audit/phase4-verification.md`.
+
+## Verification and its limits
+
+`audit/phase5-verification.md` records final evidence. A separate real HTTP server ran with outbound socket connections and DNS blocked during catalogue startup and requests. All 1,963 timed responses finished under one second, including all 875 part responses and 875 path responses. The slowest required API request was 40.860 ms; the slowest response including page/assets was 197.018 ms. Eight concurrent clients also exercised the largest supplied path result. Timings include a local TCP connection and the full response body.
+
+Repeat this measurement after installing dependencies:
+
+```powershell
+.\.venv\Scripts\python.exe tools/verify_service.py
+```
+
+On macOS/Linux use `.venv/bin/python`. The script starts and stops its own server on a free loopback port and writes `audit/phase5-performance.json`. It checks the supplied dataset, not hidden grading data. Raw timings and platform details are in that JSON file.
+
+The network adapter was not physically disabled. Offline evidence consists of blocked application connections/DNS, local-only assets, and successful runtime behavior under that guard. Performance on arbitrary graphs or another computer is not guaranteed: returning every path can produce exponentially large output. Unspecified conflicting-record policies remain documented assumptions in DATA.md.
 
 ## Try the engine
 
@@ -109,6 +125,7 @@ Construction reads the files once. Query methods use the loaded snapshot and ret
 - `parttrace/catalogue.py`: read/normalize CSVs, resolve revisions and service ranges, calculate quantities, expose query methods and source-linked diagnostics.
 - `parttrace/graph.py`: follow directed containment from the root, remove self-edges and unavoidable-ancestor edges, reject unresolved cycles, order parents before children.
 - `parttrace/api.py`: load the snapshot during startup, enforce exact response models, parse serial inputs, and translate lookup errors into HTTP responses.
+- `run.py`: create/check the virtual environment, install dependencies when needed, and launch the service.
 - `parttrace/static/`: one HTML page, local CSS, and plain JavaScript; display text is inserted with `textContent` rather than interpreting source data as HTML.
 - `tests/fixtures/appendix_q/`: the brief's worked example; descriptions/category/cost not specified there use neutral fixture values.
 - `tests/`: small fixtures covering the worked example, shared assemblies, errors, serial boundaries, and row-order independence.
@@ -118,6 +135,8 @@ Construction reads the files once. Query methods use the loaded snapshot and ret
 
 For quantities, start the root at one and add `parent total * quantity per parent` into each child. The worked example's FA-9 therefore has `4 + 2 * 3 = 10`. Paths describe design routes, so multiple physical occurrences on one route do not produce repeated identical paths. Serial applicability counts distinct ready parts, not their physical quantities.
 
-## Remaining delivery work
+## Walkthrough and submission status
 
-Phase 5 completes and verifies the single install/start command, HTTP performance, offline operation, further generalization, and final documentation. The real submission deadline is not provided in the PDF and still needs confirmation from the original assignment page. Publishing, inviting a collaborator, and submitting require separate user authorization.
+See `WALKTHROUGH.md` for a short demo script and explanations to practice, and `REQUIREMENTS.md` for the final checklist. All supplied CSV bytes remain unchanged; `.gitattributes` preserves them across Git checkouts. Virtual environments, caches, and temporary verification clones are ignored. Use the Git repository rather than copying the entire working directory when preparing a submission.
+
+The repository is local only. The real deadline still needs confirmation from the original assignment page. A private remote repository, the required collaborator invitation, and form submission have not been performed; they require separate user authorization. Confidentiality continues to apply.

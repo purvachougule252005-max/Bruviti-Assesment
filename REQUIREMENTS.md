@@ -2,6 +2,8 @@
 
 Authority: supplied `use_case_5_parts_catalogue_api.pdf`, all five pages, especially sections 3-7 and Appendix Q. User instructions add phase review gates and optional features. This checklist was created before application implementation. Unchecked items are not verified.
 
+Final local status: implementation and available verification complete. Evidence is in `audit/phase5-verification.md`. Deadline and external submission steps remain open. Physical adapter disconnection and other operating systems were not tested; do not interpret a checked offline/performance item as an unlimited guarantee.
+
 ## Phase 1: specification and audit
 - [x] Read the entire five-page specification, including timing, submission, and worked example.
 - [x] Inspect all three supplied CSVs and preserve original bytes under root `data/`.
@@ -41,33 +43,33 @@ Authority: supplied `use_case_5_parts_catalogue_api.pdf`, all five pages, especi
 - [x] User authorizes Phase 4 with "Continue" after the Phase 3 report, and reinforces continuation during the phase.
 
 ## Runtime and interface (sections 4-5; Phase 4)
-- [x] No LLM/external API calls at request time. API/assets pass with application connections blocked; browser assets/fetches are same-origin under CSP. Machine-wide network-off verification remains a Phase 5 check.
-- [ ] Every required request completes in under one second; measure representative/worst available cases and state limits of evidence.
-- [x] Use supplied source data only; synthetic fixtures are test inputs, not added catalogue data. Source hashes unchanged through Phase 4.
+- [x] No LLM/external API calls at request time. API/assets pass with application connections blocked; browser assets/fetches are same-origin under CSP. A real server also completed startup and requests with outbound Python sockets/DNS blocked. Physical adapter disconnection was not performed.
+- [x] Measure the under-one-second requirement: all 1,963 observed responses passed, including every supplied part/path and 16 serial boundary values. Required API maximum 40.860 ms. Unseen input sizes/hardware remain unverified; all-path output can grow exponentially.
+- [x] Use supplied source data only; synthetic fixtures are test inputs, not added catalogue data. Source bytes match the original ZIP through Phase 5 and in the clean clone.
 - [x] No training is used; the CPU training budget is not applicable.
-- [ ] One documented command installs dependencies and starts from a fresh clone on port 8000.
+- [x] One documented command, `python run.py`, installs dependencies and starts on port 8000; verified in an actual local clone and new virtual environment on Windows/Python 3.13.3 with cached wheels.
 - [x] API and single demo page `/` run in the same process on port 8000.
 - [x] Page accepts input and shows responses; local assets, system fonts, no externally hosted scripts/fonts/services.
 - [x] Optional search, explanations, serial reasons, data quality, and hierarchy stay separate under `/demo/`; required responses remain unchanged.
 - [x] Verify local-only dependencies and API/assets under the test network guard; perform browser interaction/phone/desktop checks. The machine's network adapter was not disabled; record this limit in `audit/phase4-verification.md`.
 - [x] Prepare Phase 4 results and pause before final delivery work.
-- [ ] User reviews Phase 4 and authorizes Phase 5.
+- [x] User authorizes Phase 5 with "continue" after the Phase 4 report.
 
 ## Delivery and final verification (sections 4-6; Phase 5)
-- [ ] Local Git repository contains working service and required deliverables.
-- [ ] README.md: fresh-reader setup/start command, prerequisites, and test instructions.
-- [ ] DATA.md: source, findings, handling decisions, and test design.
-- [ ] NOTES.md: decisions, scope cuts, next steps, at most one page.
-- [ ] AI.md: honestly record every AI tool and purpose; keep current throughout work.
+- [x] Local Git repository contains working service and required deliverables; no remote configured.
+- [x] README.md: fresh-reader setup/start command, prerequisites, and test instructions.
+- [x] DATA.md: source, findings, handling decisions, and test design.
+- [x] NOTES.md: concise one-page-length decisions, scope cuts, and next steps (under 300 words).
+- [x] AI.md: actual AI/tool uses across all five phases recorded.
 - [x] `tests/` contains meaningful engine and HTTP tests runnable without external network access. Windows internal socket pairs are permitted; application connections remain blocked.
-- [ ] Generalization verified using independent fixtures without changing supplied CSVs.
-- [ ] Startup checked in clean environment where possible; unperformed checks reported explicitly.
-- [ ] Check repository for secrets, virtual environments, and files over 50 MB.
-- [ ] Final checklist and simple project walkthrough completed; no unrun tests claimed as passing.
+- [x] Generalization verified using 20 generated exports and an independent path-enumeration oracle; supplied CSVs unchanged. Final suite: 155 passed in both development and clean-clone environments.
+- [x] Startup checked in a fresh local clone/new virtual environment; documented limits include reused OS/Python/pip cache, no Linux/macOS check, and no physical adapter disconnection.
+- [x] Check tracked files for secret patterns, virtual environments, and files over 50 MB; evidence in `audit/phase5-packaging.json`. Pattern checks found no credentials; this is not a guarantee of exhaustive secret detection.
+- [x] Final checklist, verification record, and `WALKTHROUGH.md` completed; actual test failure/recovery and unperformed checks disclosed.
 
 ## Timing, confidentiality, and submission (sections 1, 6-7)
 - [ ] User supplies actual deadline and timezone from original brief-opening page. PDF gives only 24 hours after opening; current chat date is not the deadline.
-- [ ] Keep brief and submission confidential until deadline; do not share with other candidates.
+- [x] Work kept local and not shared with other candidates; ongoing confidentiality duty remains until the deadline.
 - [ ] Finish relevant commits before deadline; later commits/form submissions are ignored.
 - [ ] Private GitHub repository (future action, requires explicit user authorization).
 - [ ] Add `bruviti-campus` collaborator (future action, requires explicit user authorization).

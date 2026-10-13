@@ -1,6 +1,6 @@
 # PartTrace data audit and handling plan
 
-Phase 4 interface complete. Phase 1 findings below were measured from the supplied export. The policy table records implemented engine/API choices; they remain engineering decisions rather than additional official rules. Phase-specific verification is recorded below. Final delivery verification remains pending.
+Local implementation and Phase 5 verification are complete, subject to the explicit limits below. Phase 1 findings were measured from the supplied export. The policy table records implemented engineering choices rather than additional official rules. Historical phase results and final verification are recorded separately.
 
 ## Source and reproducibility
 
@@ -96,7 +96,7 @@ An independent scratch calculation enumerated simple root paths and multiplied t
 | 9999 | 444 |
 | 10000 | 401 |
 
-Source-byte comparisons and independent audit assertions actually ran successfully; results are saved in `audit/verification.json`. These observations must never become hardcoded engine answers. At the end of Phase 1 no pytest suite had run; Phase 2 results are recorded below. API, offline-service, request latency, and fresh-clone startup checks remain future work.
+Source-byte comparisons and independent audit assertions actually ran successfully; results are saved in `audit/verification.json`. These observations must never become hardcoded engine answers. At the end of Phase 1 no pytest suite had run; subsequent engine, API, offline-service, latency, and fresh-clone results are recorded below.
 
 ## Rules required by the brief
 
@@ -178,7 +178,7 @@ The page uses same-origin assets/fetches, system fonts, safe text insertion, and
 
 ## Test design and remaining verification
 
-Tests are built around small independently calculable fixtures, not the supplied export's aggregate counts. Synthetic fixtures are test inputs only; they never augment runtime catalogue data. Engine, HTTP, and demo cases now run, and browser interactions have been checked. Broader generated-fixture generalization, machine-wide offline checks, and clean-startup/performance verification remain for Phase 5.
+Tests are built around small independently calculable fixtures, not the supplied export's aggregate counts. Synthetic fixtures are test inputs only; they never augment runtime catalogue data. Engine, HTTP, demo, and generated-export cases run under a network guard. Browser interactions were checked separately. Final verification and remaining limits follow.
 
 - Reproduce all four Appendix Q examples with fixture root AS-1: four parts, statuses 2/1/1, FA-9 revision B and quantity 10, both paths in order, serial 2500 count 2.
 - Mix case and surrounding whitespace across files; repeat relationships; reorder rows; check identical outcomes.
@@ -189,9 +189,21 @@ Tests are built around small independently calculable fixtures, not the supplied
 - Check lower/upper serial boundaries, just outside each boundary, no range, unions, missing/N parts, zero/leading zeros, and rejected input syntax.
 - Verify exact HTTP keys/types/nulls, child/parent/path ordering, case-insensitive lookups, and ready-only health response after load.
 - Use independent generated acyclic fixtures with enumerated-path quantity oracles and row permutations. Keep supplied source files unchanged.
-- Later measure real HTTP response times and run without network, inspect browser network requests, and test the documented startup in a clean environment where possible. These are future checks, not completed claims.
+- Measure real HTTP response times with application network access blocked, inspect local browser assets, and exercise startup from a clean checkout. Phase 5 evidence and limits are below.
 
-Implemented engine design: standard-library CSV loading into a directed graph; normalize/deduplicate/repair before storing frozen part records in a read-only mapping. Calculate quantities in parent-before-child order: each child's total receives `parent_total * quantity_per_parent` from every parent. Look up paths backward from the target, then sort the full sequences. Queries perform no file reads. Server startup loads this snapshot; optional demo explanations reuse these calculations outside required API schemas. All-path output can grow exponentially in arbitrary graphs; performance on the unseen export cannot be guaranteed solely from this small audit and must be measured honestly later.
+Implemented engine design: standard-library CSV loading into a directed graph; normalize/deduplicate/repair before storing frozen part records in a read-only mapping. Calculate quantities in parent-before-child order: each child's total receives `parent_total * quantity_per_parent` from every parent. Look up paths backward from the target, then sort the full sequences. Queries perform no file reads. Server startup loads this snapshot; optional demo explanations reuse these calculations outside required API schemas. All-path output can grow exponentially in arbitrary graphs; measured performance on this export cannot guarantee performance on an arbitrarily larger unseen export.
+
+## Phase 5 final verification
+
+The final suite passed **155 tests in 4.47 seconds** in the development checkout and **155 in 5.94 seconds** in a fresh local clone with a newly created virtual environment. The clean-clone command was `.\.venv\Scripts\python.exe -m pytest -q --tb=short`; `pip check` also reported no broken requirements. An earlier custom `--basetemp=tmp/pytest-clean` invocation produced 47 passes and 108 setup errors because the clean clone had no `tmp/` parent; the documented default-temp invocation resolved that test-command issue without changing application code.
+
+Twenty seeded generated exports in `tests/test_generalization.py` combine differently numbered shared assemblies, variable quantities, redundant rows, case/whitespace changes, upward/self edges, disconnected parents, missing metadata, revisions, and serial ranges. Expected routes and quantities are computed by independent forward route enumeration, multiplying each route's edge quantities. Production computes totals topologically and walks paths backward. Tests compare every required part field, every sorted path, validation counts, 33 serial inputs per export, and outside-part HTTP errors. This checks general rules without substituting fixture data into the supplied runtime folder.
+
+`tools/verify_service.py` started a separate real Uvicorn server with application outbound sockets and DNS blocked before catalogue startup. Its 1,963 measured requests covered all 875 parts and 875 path responses, 16 serial values around source boundaries, page/assets/demo/error routes, and 64 largest-path requests at eight-client concurrency. All finished under one second. Maximum required API latency: **40.860 ms**; maximum including page/assets: **197.018 ms**; catalogue construction: **81.928 ms**. Measurements include TCP setup and full body reading. Raw evidence: `audit/phase5-performance.json`. Comparison against the engine here is a transport check; the generated-fixture oracle supplies independent correctness evidence.
+
+The one-command launcher, `python run.py`, created a new `.venv`, installed dependencies, and served port 8000 from an actual local Git clone. pip reused its wheel cache; this was not a new computer. The installed checkout also restarted with `PIP_NO_INDEX=1` without running pip. CSVs in both checkouts match the supplied ZIP byte for byte; `.gitattributes` disables text conversion for source CSVs. See `audit/phase5-startup.json`.
+
+Limits: the physical network adapter was not disabled; Python application socket/DNS blocking and same-origin browser assets provide the offline evidence. Linux/macOS, other Python versions, an empty package cache, hidden grading data, and deadline compliance were not verified. Unbounded path output can grow exponentially; local timings cannot guarantee arbitrary input sizes. No training, runtime model, or external runtime API is used.
 
 ## Remaining external information
 

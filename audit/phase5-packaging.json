@@ -1,0 +1,12 @@
+{
+  "tracked_files_checked": 45,
+  "excluded_report": "audit/phase5-packaging.json is generated after this scan",
+  "largest_file": "audit/phase4-desktop.png",
+  "largest_file_bytes": 126884,
+  "files_over_50_MB": [],
+  "tracked_environments_caches_temporary_files": [],
+  "private_key_or_common_token_pattern_matches": [],
+  "remote_names": [],
+  "notes_words": 253,
+  "limits": "Heuristic private-key/AWS/GitHub/OpenAI token patterns, not an exhaustive credential audit. Git configuration and ignored local environments are not deliverables."
+}
