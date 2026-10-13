@@ -1,0 +1,165 @@
+{
+  "validation": {
+    "parts": 875,
+    "ready": 483,
+    "missing": 25,
+    "not_replaceable": 367
+  },
+  "root": {
+    "part_number": "AS-40000",
+    "description": "AM-700 bottling line",
+    "revision": "A",
+    "status": "not_replaceable",
+    "total_quantity": 1,
+    "parents": [],
+    "children": [
+      {
+        "part_number": "AS-40001",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40026",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40039",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40057",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40073",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40079",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40109",
+        "quantity": 1
+      },
+      {
+        "part_number": "AS-40127",
+        "quantity": 1
+      }
+    ]
+  },
+  "latest_revision_example": {
+    "part_number": "AS-40046",
+    "description": "Filler sub-assembly 4.7",
+    "revision": "C",
+    "status": "not_replaceable",
+    "total_quantity": 1,
+    "parents": [
+      "AS-40041"
+    ],
+    "children": [
+      {
+        "part_number": "EL-10066",
+        "quantity": 2
+      },
+      {
+        "part_number": "EL-10067",
+        "quantity": 1
+      },
+      {
+        "part_number": "FA-30001",
+        "quantity": 11
+      },
+      {
+        "part_number": "FA-30007",
+        "quantity": 5
+      },
+      {
+        "part_number": "FA-30010",
+        "quantity": 3
+      },
+      {
+        "part_number": "ME-20051",
+        "quantity": 1
+      }
+    ]
+  },
+  "missing_example": {
+    "part_number": "EL-10024",
+    "description": null,
+    "revision": null,
+    "status": "missing",
+    "total_quantity": 1,
+    "parents": [
+      "AS-40015"
+    ],
+    "children": []
+  },
+  "shared_fastener": {
+    "part_number": "FA-30022",
+    "description": "Nut M4",
+    "revision": "C",
+    "status": "not_replaceable",
+    "total_quantity": 66,
+    "parents": [
+      "AS-40006",
+      "AS-40027",
+      "AS-40094",
+      "AS-40098",
+      "AS-40119",
+      "AS-40147",
+      "AS-40163",
+      "AS-40166",
+      "AS-40171",
+      "AS-40176",
+      "AS-40181",
+      "AS-40209"
+    ],
+    "children": []
+  },
+  "largest_quantity_example": {
+    "part_number": "FA-30019",
+    "description": "Washer M4",
+    "revision": "A",
+    "status": "ready",
+    "total_quantity": 178,
+    "parents": [
+      "AS-40001",
+      "AS-40010",
+      "AS-40016",
+      "AS-40030",
+      "AS-40081",
+      "AS-40098",
+      "AS-40099",
+      "AS-40102",
+      "AS-40107",
+      "AS-40118",
+      "AS-40147",
+      "AS-40148",
+      "AS-40154",
+      "AS-40159",
+      "AS-40161",
+      "AS-40175",
+      "AS-40176",
+      "AS-40180",
+      "AS-40187",
+      "AS-40190",
+      "AS-40192",
+      "AS-40204"
+    ],
+    "children": []
+  },
+  "largest_path_count": 22,
+  "serial_2500": {
+    "serial": 2500,
+    "applicable_parts": 448
+  },
+  "removed_edges": [
+    {
+      "message": "AS-40209 -> AS-40002: self-containment or unavoidable rooted ancestor",
+      "sources": [
+        "bom.csv:55"
+      ]
+    }
+  ],
+  "source_files_unchanged": true
+}

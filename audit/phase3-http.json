@@ -1,0 +1,134 @@
+{
+  "transport": "Real HTTP to Uvicorn on 127.0.0.1:8000",
+  "source_files_unchanged": true,
+  "responses": [
+    {
+      "request": "GET /health",
+      "status": 200,
+      "body": {
+        "status": "ok"
+      }
+    },
+    {
+      "request": "GET /api/validation",
+      "status": 200,
+      "body": {
+        "parts": 875,
+        "ready": 483,
+        "missing": 25,
+        "not_replaceable": 367
+      }
+    },
+    {
+      "request": "GET /api/parts/el-10024",
+      "status": 200,
+      "body": {
+        "part_number": "EL-10024",
+        "description": null,
+        "revision": null,
+        "status": "missing",
+        "total_quantity": 1,
+        "parents": [
+          "AS-40015"
+        ],
+        "children": []
+      }
+    },
+    {
+      "request": "GET /api/parts/AS-40003",
+      "status": 200,
+      "body": {
+        "part_number": "AS-40003",
+        "description": "Infeed conveyor sub-assembly 3.1",
+        "revision": "A",
+        "status": "not_replaceable",
+        "total_quantity": 1,
+        "parents": [
+          "AS-40002"
+        ],
+        "children": [
+          {
+            "part_number": "AS-40004",
+            "quantity": 1
+          },
+          {
+            "part_number": "AS-40007",
+            "quantity": 1
+          },
+          {
+            "part_number": "AS-40009",
+            "quantity": 1
+          },
+          {
+            "part_number": "EL-10002",
+            "quantity": 2
+          },
+          {
+            "part_number": "EL-10012",
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "request": "GET /api/parts/as-40209/paths",
+      "status": 200,
+      "body": {
+        "part_number": "AS-40209",
+        "paths": [
+          [
+            "AS-40000",
+            "AS-40001",
+            "AS-40002",
+            "AS-40208",
+            "AS-40209"
+          ]
+        ]
+      }
+    },
+    {
+      "request": "GET /api/serial/2500",
+      "status": 200,
+      "body": {
+        "serial": 2500,
+        "applicable_parts": 448
+      }
+    },
+    {
+      "request": "GET /api/serial/0002500",
+      "status": 200,
+      "body": {
+        "serial": 2500,
+        "applicable_parts": 448
+      }
+    },
+    {
+      "request": "GET /api/parts/AS-40210",
+      "status": 404,
+      "body": {
+        "detail": "Part not found in machine"
+      }
+    },
+    {
+      "request": "GET /api/parts/as-40210/paths",
+      "status": 404,
+      "body": {
+        "detail": "Part not found in machine"
+      }
+    },
+    {
+      "request": "GET /api/serial/2.5",
+      "status": 422,
+      "body": {
+        "detail": "Serial must contain only ASCII digits (0-9)"
+      }
+    },
+    {
+      "request": "GET /api/serial/2500.0",
+      "status": 422,
+      "body": {
+        "detail": "Serial must contain only ASCII digits (0-9)"
+      }
+    }
+  ]
+}

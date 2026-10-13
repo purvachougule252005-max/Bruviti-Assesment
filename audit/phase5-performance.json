@@ -1,0 +1,83 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.3",
+  "catalogue_load_ms": 81.928,
+  "parts_checked": 875,
+  "largest_path_result": {
+    "part": "FA-30019",
+    "paths": 22
+  },
+  "serials_checked": [
+    0,
+    999,
+    1000,
+    1001,
+    1998,
+    1999,
+    2000,
+    2001,
+    2500,
+    2998,
+    2999,
+    3000,
+    3001,
+    9998,
+    9999,
+    10000
+  ],
+  "timings": {
+    "health": {
+      "requests": 30,
+      "median_ms": 2.839,
+      "p95_ms": 21.537,
+      "max_ms": 22.853
+    },
+    "validation": {
+      "requests": 30,
+      "median_ms": 2.539,
+      "p95_ms": 23.252,
+      "max_ms": 26.097
+    },
+    "part": {
+      "requests": 875,
+      "median_ms": 2.849,
+      "p95_ms": 24.0,
+      "max_ms": 40.86
+    },
+    "paths": {
+      "requests": 875,
+      "median_ms": 2.852,
+      "p95_ms": 22.468,
+      "max_ms": 28.845
+    },
+    "serial": {
+      "requests": 80,
+      "median_ms": 3.771,
+      "p95_ms": 4.684,
+      "max_ms": 27.101
+    },
+    "demo_assets": {
+      "requests": 6,
+      "median_ms": 5.215,
+      "p95_ms": 197.018,
+      "max_ms": 197.018
+    },
+    "errors": {
+      "requests": 3,
+      "median_ms": 3.617,
+      "p95_ms": 3.758,
+      "max_ms": 3.758
+    },
+    "concurrent_paths_8_workers": {
+      "requests": 64,
+      "median_ms": 21.255,
+      "p95_ms": 26.615,
+      "max_ms": 37.258
+    }
+  },
+  "all_observed_requests_under_one_second": true,
+  "server_outbound_connections_and_dns_blocked": true,
+  "blocked_outbound_attempts": 0,
+  "network_adapter_disabled": false,
+  "limits": "Local measurements, supplied export, warm OS caches; not a guarantee for arbitrary graphs/hardware. Client timings include TCP connection and full body read. Imports precede the guard; catalogue startup and all requests run under it."
+}

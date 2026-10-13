@@ -1,0 +1,25 @@
+{
+  "source_bytes_match_zip": true,
+  "independent_path_enumeration_agrees": true,
+  "parts": 875,
+  "statuses": {
+    "not_replaceable": 367,
+    "ready": 483,
+    "missing": 25
+  },
+  "serial_audit_projections": {
+    "999": 401,
+    "1000": 440,
+    "1999": 440,
+    "2000": 448,
+    "2500": 448,
+    "2999": 448,
+    "3000": 444,
+    "9999": 444,
+    "10000": 401
+  },
+  "FA-30022_quantity": 66,
+  "FA-30019_quantity": 178,
+  "FA-30019_paths": 22,
+  "note": "Audit assertions executed; not pytest or HTTP verification."
+}

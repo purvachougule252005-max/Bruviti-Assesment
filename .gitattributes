@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve the supplied catalogue bytes even on Windows checkouts.
+data/*.csv -text whitespace=cr-at-eol
+*.png binary

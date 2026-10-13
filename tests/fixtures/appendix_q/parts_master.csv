@@ -1,0 +1,5 @@
+part_number,revision,description,category,unit_cost
+AS-1,A,Example machine,Assembly,0
+AS-2,A,Example assembly,Assembly,0
+FA-9,A,Old fastener,Fastener,0
+FA-9,B,...,Fastener,0

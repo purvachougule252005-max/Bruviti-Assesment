@@ -1,0 +1,5 @@
+parent_pn,child_pn,quantity
+AS-1,AS-2,2
+AS-1,FA-9,4
+AS-2,FA-9,3
+AS-2,EL-5,1

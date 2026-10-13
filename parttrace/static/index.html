@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>PartTrace · Machine Parts Explorer</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="PartTrace home"><span class="brand-mark" aria-hidden="true">P<span>↳</span></span>PartTrace<span class="brand-sub">SERVICE CATALOGUE</span></a>
+    <span id="connection" class="connection">Connecting…</span>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">AM-700 / FIELD SERVICE</p><h1>Every part. Every connection.</h1><p class="subheading">Find a part, trace its place in the machine, and check whether it fits.</p></div>
+      <a class="text-link" href="#data-quality">View data quality <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="metrics" aria-label="Catalogue totals">
+      <div><span>Parts in machine</span><strong id="count-parts">—</strong><small>Unique part numbers</small></div>
+      <div><span><i class="dot ready"></i> Ready</span><strong id="count-ready">—</strong><small>Marked field replaceable</small></div>
+      <div><span><i class="dot missing"></i> Missing</span><strong id="count-missing">—</strong><small>No parts-master record</small></div>
+      <div><span><i class="dot not_replaceable"></i> Not replaceable</span><strong id="count-not_replaceable">—</strong><small>Not marked Y for service</small></div>
+    </section>
+    <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+    <div class="workspace">
+      <aside class="panel finder" aria-label="Find a part">
+        <div class="panel-heading"><h2>Find a part</h2><span class="section-number">01</span></div>
+        <form id="search-form">
+          <label for="search">Part number or description</label>
+          <div class="input-row"><input id="search" type="search" placeholder="e.g. FA-30019 or washer" autocomplete="off"><button type="submit" class="square-button" aria-label="Search parts">↗</button></div>
+        </form>
+        <p id="search-count" class="muted small" aria-live="polite">Loading catalogue…</p>
+        <ul id="search-results" class="results" aria-label="Search results"></ul>
+        <details class="hierarchy"><summary>Browse machine hierarchy</summary><p class="muted small">Expand an assembly; select a part to inspect it.</p><div id="tree"></div></details>
+      </aside>
+      <section class="panel detail" aria-label="Part details" aria-busy="false">
+        <div class="panel-heading"><span class="eyebrow">PART INSPECTOR</span><span id="part-status" class="badge">Select a part</span></div>
+        <div class="part-heading"><div><h2 id="part-number">Your machine, connected.</h2><p id="part-description" class="muted">Choose a part from the results to see its details.</p></div><div class="quantity-box"><span>Total per machine</span><strong id="part-quantity">—</strong></div></div>
+        <div class="fact-grid">
+          <section><h3>Current revision <span id="revision-tag" class="revision-tag">—</span></h3><p id="revision-reason" class="muted">Revision information will appear here.</p></section>
+          <section><h3>Replacement status</h3><p id="status-reason" class="muted">Replacement information will appear here.</p></section>
+        </div>
+        <section class="quantity-section"><h3>Where the quantity comes from</h3><p id="quantity-reason" class="calculation">Select a part to trace its quantity.</p><details id="terms-details" hidden><summary>Show contributions by parent</summary><div class="table-scroll"><table><thead><tr><th>Parent</th><th>Occurrences</th><th>Each</th><th>Contribution</th></tr></thead><tbody id="quantity-terms"></tbody></table></div></details></section>
+        <section class="serial-section">
+          <div><h3>Does it fit this serial?</h3><p class="muted small">Serial ranges include both endpoints. Only ready parts apply.</p></div>
+          <form id="serial-form"><label for="serial">Machine serial number</label><div class="input-row"><input id="serial" type="text" inputmode="numeric" placeholder="e.g. 2500" autocomplete="off"><button type="submit" class="primary-button">Check fit</button></div></form>
+          <p id="compatibility" class="compatibility" role="status" aria-live="polite">Enter a serial to check the selected part.</p><p id="serial-total" class="muted small"></p>
+        </section>
+        <section class="connections"><div><h3>Direct parents</h3><div id="parents" class="chips"><span class="muted">—</span></div></div><div><h3>Direct children</h3><div id="children" class="chips"><span class="muted">—</span></div></div></section>
+        <details class="paths-section"><summary>Paths through the machine <span id="path-count" class="counter">0</span></summary><ol id="paths" class="paths"></ol></details>
+      </section>
+    </div>
+    <section id="data-quality" class="panel quality-panel"><div class="panel-heading"><div><p class="eyebrow">TRUST THE TRACE</p><h2>Data quality, made visible.</h2></div><span class="section-number">02</span></div><p class="muted">Source inconsistencies are reconciled by documented rules. Missing parts stay visible.</p><div id="quality-stats" class="quality-stats"></div><details><summary>Relationships removed from the machine</summary><ul id="removed-edges" class="removed-edges"></ul></details></section>
+    <details class="panel response-panel"><summary>Inspect the API responses <span class="muted small">Original responses from this server</span></summary><div class="response-buttons" aria-label="Choose response"><button type="button" data-response="part">Part</button><button type="button" data-response="paths">Paths</button><button type="button" data-response="serial">Serial</button><button type="button" data-response="validation">Validation</button><button type="button" data-response="health">Health</button></div><p id="response-label" class="mono muted small">Select a response</p><pre id="response-json" tabindex="0">No response selected.</pre></details>
+    <footer><span>PartTrace <span class="muted">/ Machine Parts Explorer</span></span><span class="muted">Local data. Deterministic answers.</span></footer>
+  </main>
+  <noscript><p class="notice">Enable JavaScript to use the explorer. The API remains available at /api/validation.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,1677 @@
+{
+  "bom": {
+    "duplicate_groups": [
+      {
+        "child": "EL-10075",
+        "parent": "AS-40054",
+        "rows": [
+          {
+            "child_pn": "EL-10075",
+            "line": 6,
+            "parent_pn": "AS-40054",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10075",
+            "line": 944,
+            "parent_pn": "AS-40054",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10159",
+        "parent": "AS-40105",
+        "rows": [
+          {
+            "child_pn": "EL-10159",
+            "line": 10,
+            "parent_pn": "AS-40105",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10159",
+            "line": 349,
+            "parent_pn": "AS-40105",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10329",
+        "parent": "AS-40206",
+        "rows": [
+          {
+            "child_pn": "EL-10329",
+            "line": 17,
+            "parent_pn": "AS-40206",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "EL-10329",
+            "line": 221,
+            "parent_pn": "AS-40206",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "EL-10282",
+        "parent": "AS-40175",
+        "rows": [
+          {
+            "child_pn": "EL-10282",
+            "line": 51,
+            "parent_pn": "AS-40175",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10282",
+            "line": 1138,
+            "parent_pn": "AS-40175",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "FA-30018",
+        "parent": "AS-40193",
+        "rows": [
+          {
+            "child_pn": "FA-30018",
+            "line": 60,
+            "parent_pn": "AS-40193",
+            "quantity": "3"
+          },
+          {
+            "child_pn": "FA-30018",
+            "line": 1160,
+            "parent_pn": "AS-40193",
+            "quantity": "3"
+          }
+        ]
+      },
+      {
+        "child": "FA-30017",
+        "parent": "AS-40163",
+        "rows": [
+          {
+            "child_pn": "FA-30017",
+            "line": 68,
+            "parent_pn": "AS-40163",
+            "quantity": "3"
+          },
+          {
+            "child_pn": "FA-30017",
+            "line": 634,
+            "parent_pn": "AS-40163",
+            "quantity": "3"
+          }
+        ]
+      },
+      {
+        "child": "EL-10002",
+        "parent": "AS-40003",
+        "rows": [
+          {
+            "child_pn": "EL-10002",
+            "line": 94,
+            "parent_pn": "AS-40003",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "EL-10002",
+            "line": 871,
+            "parent_pn": "AS-40003",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "ME-20207",
+        "parent": "AS-40153",
+        "rows": [
+          {
+            "child_pn": "ME-20207",
+            "line": 124,
+            "parent_pn": "AS-40153",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "ME-20207",
+            "line": 669,
+            "parent_pn": "AS-40153",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "ME-20082",
+        "parent": "AS-40066",
+        "rows": [
+          {
+            "child_pn": "ME-20082",
+            "line": 160,
+            "parent_pn": "AS-40066",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "ME-20082",
+            "line": 502,
+            "parent_pn": "AS-40066",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "AS-40122",
+        "parent": "AS-40121",
+        "rows": [
+          {
+            "child_pn": "AS-40122",
+            "line": 201,
+            "parent_pn": "AS-40121",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40122",
+            "line": 584,
+            "parent_pn": "AS-40121",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "FA-30024",
+        "parent": "AS-40016",
+        "rows": [
+          {
+            "child_pn": "FA-30024",
+            "line": 233,
+            "parent_pn": "AS-40016",
+            "quantity": "12"
+          },
+          {
+            "child_pn": "FA-30024",
+            "line": 1201,
+            "parent_pn": "AS-40016",
+            "quantity": "12"
+          }
+        ]
+      },
+      {
+        "child": "FA-30009",
+        "parent": "AS-40199",
+        "rows": [
+          {
+            "child_pn": "FA-30009",
+            "line": 237,
+            "parent_pn": "AS-40199",
+            "quantity": "4"
+          },
+          {
+            "child_pn": "FA-30009",
+            "line": 635,
+            "parent_pn": "AS-40199",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "child": "ME-20153",
+        "parent": "AS-40117",
+        "rows": [
+          {
+            "child_pn": "ME-20153",
+            "line": 270,
+            "parent_pn": "AS-40117",
+            "quantity": "4"
+          },
+          {
+            "child_pn": "ME-20153",
+            "line": 618,
+            "parent_pn": "AS-40117",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "child": "AS-40024",
+        "parent": "AS-40023",
+        "rows": [
+          {
+            "child_pn": "AS-40024",
+            "line": 291,
+            "parent_pn": "AS-40023",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40024",
+            "line": 842,
+            "parent_pn": "AS-40023",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "ME-20206",
+        "parent": "AS-40156",
+        "rows": [
+          {
+            "child_pn": "ME-20206",
+            "line": 316,
+            "parent_pn": "AS-40156",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "ME-20206",
+            "line": 336,
+            "parent_pn": "AS-40156",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "AS-40160",
+        "parent": "AS-40157",
+        "rows": [
+          {
+            "child_pn": "AS-40160",
+            "line": 319,
+            "parent_pn": "AS-40157",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40160",
+            "line": 1123,
+            "parent_pn": "AS-40157",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "FA-30018",
+        "parent": "AS-40204",
+        "rows": [
+          {
+            "child_pn": "FA-30018",
+            "line": 335,
+            "parent_pn": "AS-40204",
+            "quantity": "8"
+          },
+          {
+            "child_pn": "FA-30018",
+            "line": 1144,
+            "parent_pn": "AS-40204",
+            "quantity": "8"
+          }
+        ]
+      },
+      {
+        "child": "ME-20252",
+        "parent": "AS-40184",
+        "rows": [
+          {
+            "child_pn": "ME-20252",
+            "line": 357,
+            "parent_pn": "AS-40184",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "ME-20252",
+            "line": 822,
+            "parent_pn": "AS-40184",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10022",
+        "parent": "AS-40013",
+        "rows": [
+          {
+            "child_pn": "EL-10022",
+            "line": 388,
+            "parent_pn": "AS-40013",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10022",
+            "line": 913,
+            "parent_pn": "AS-40013",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "AS-40168",
+        "parent": "AS-40127",
+        "rows": [
+          {
+            "child_pn": "AS-40168",
+            "line": 453,
+            "parent_pn": "AS-40127",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40168",
+            "line": 1260,
+            "parent_pn": "AS-40127",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10068",
+        "parent": "AS-40047",
+        "rows": [
+          {
+            "child_pn": "EL-10068",
+            "line": 471,
+            "parent_pn": "AS-40047",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "EL-10068",
+            "line": 1044,
+            "parent_pn": "AS-40047",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "EL-10118",
+        "parent": "AS-40084",
+        "rows": [
+          {
+            "child_pn": "EL-10118",
+            "line": 486,
+            "parent_pn": "AS-40084",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10118",
+            "line": 1172,
+            "parent_pn": "AS-40084",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10148",
+        "parent": "AS-40097",
+        "rows": [
+          {
+            "child_pn": "EL-10148",
+            "line": 489,
+            "parent_pn": "AS-40097",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10148",
+            "line": 995,
+            "parent_pn": "AS-40097",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "AS-40013",
+        "parent": "AS-40002",
+        "rows": [
+          {
+            "child_pn": "AS-40013",
+            "line": 507,
+            "parent_pn": "AS-40002",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40013",
+            "line": 1086,
+            "parent_pn": "AS-40002",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "FA-30014",
+        "parent": "AS-40100",
+        "rows": [
+          {
+            "child_pn": "FA-30014",
+            "line": 571,
+            "parent_pn": "AS-40100",
+            "quantity": "5"
+          },
+          {
+            "child_pn": "FA-30014",
+            "line": 1279,
+            "parent_pn": "AS-40100",
+            "quantity": "5"
+          }
+        ]
+      },
+      {
+        "child": "ME-20100",
+        "parent": "AS-40082",
+        "rows": [
+          {
+            "child_pn": "ME-20100",
+            "line": 581,
+            "parent_pn": "AS-40082",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "ME-20100",
+            "line": 966,
+            "parent_pn": "AS-40082",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "FA-30002",
+        "parent": "AS-40045",
+        "rows": [
+          {
+            "child_pn": "FA-30002",
+            "line": 620,
+            "parent_pn": "AS-40045",
+            "quantity": "12"
+          },
+          {
+            "child_pn": "FA-30002",
+            "line": 1118,
+            "parent_pn": "AS-40045",
+            "quantity": "12"
+          }
+        ]
+      },
+      {
+        "child": "EL-10316",
+        "parent": "AS-40197",
+        "rows": [
+          {
+            "child_pn": "EL-10316",
+            "line": 636,
+            "parent_pn": "AS-40197",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10316",
+            "line": 1205,
+            "parent_pn": "AS-40197",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "ME-20103",
+        "parent": "AS-40084",
+        "rows": [
+          {
+            "child_pn": "ME-20103",
+            "line": 643,
+            "parent_pn": "AS-40084",
+            "quantity": "4"
+          },
+          {
+            "child_pn": "ME-20103",
+            "line": 646,
+            "parent_pn": "AS-40084",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "child": "FA-30019",
+        "parent": "AS-40176",
+        "rows": [
+          {
+            "child_pn": "FA-30019",
+            "line": 662,
+            "parent_pn": "AS-40176",
+            "quantity": "9"
+          },
+          {
+            "child_pn": "FA-30019",
+            "line": 982,
+            "parent_pn": "AS-40176",
+            "quantity": "9"
+          }
+        ]
+      },
+      {
+        "child": "EL-10305",
+        "parent": "AS-40186",
+        "rows": [
+          {
+            "child_pn": "EL-10305",
+            "line": 728,
+            "parent_pn": "AS-40186",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10305",
+            "line": 878,
+            "parent_pn": "AS-40186",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10313",
+        "parent": "AS-40193",
+        "rows": [
+          {
+            "child_pn": "EL-10313",
+            "line": 776,
+            "parent_pn": "AS-40193",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10313",
+            "line": 1159,
+            "parent_pn": "AS-40193",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "EL-10307",
+        "parent": "AS-40186",
+        "rows": [
+          {
+            "child_pn": "EL-10307",
+            "line": 800,
+            "parent_pn": "AS-40186",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "EL-10307",
+            "line": 1272,
+            "parent_pn": "AS-40186",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "ME-20129",
+        "parent": "AS-40098",
+        "rows": [
+          {
+            "child_pn": "ME-20129",
+            "line": 825,
+            "parent_pn": "AS-40098",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "ME-20129",
+            "line": 927,
+            "parent_pn": "AS-40098",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "AS-40030",
+        "parent": "AS-40029",
+        "rows": [
+          {
+            "child_pn": "AS-40030",
+            "line": 889,
+            "parent_pn": "AS-40029",
+            "quantity": "1"
+          },
+          {
+            "child_pn": "AS-40030",
+            "line": 1139,
+            "parent_pn": "AS-40029",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "child": "ME-20095",
+        "parent": "AS-40078",
+        "rows": [
+          {
+            "child_pn": "ME-20095",
+            "line": 930,
+            "parent_pn": "AS-40078",
+            "quantity": "4"
+          },
+          {
+            "child_pn": "ME-20095",
+            "line": 1127,
+            "parent_pn": "AS-40078",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "child": "FA-30022",
+        "parent": "AS-40119",
+        "rows": [
+          {
+            "child_pn": "FA-30022",
+            "line": 933,
+            "parent_pn": "AS-40119",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "FA-30022",
+            "line": 1225,
+            "parent_pn": "AS-40119",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "ME-20109",
+        "parent": "AS-40080",
+        "rows": [
+          {
+            "child_pn": "ME-20109",
+            "line": 961,
+            "parent_pn": "AS-40080",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "ME-20109",
+            "line": 1237,
+            "parent_pn": "AS-40080",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "FA-30018",
+        "parent": "AS-40012",
+        "rows": [
+          {
+            "child_pn": "FA-30018",
+            "line": 972,
+            "parent_pn": "AS-40012",
+            "quantity": "2"
+          },
+          {
+            "child_pn": "FA-30018",
+            "line": 1074,
+            "parent_pn": "AS-40012",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "child": "FA-30007",
+        "parent": "AS-40082",
+        "rows": [
+          {
+            "child_pn": "FA-30007",
+            "line": 1035,
+            "parent_pn": "AS-40082",
+            "quantity": "6"
+          },
+          {
+            "child_pn": "FA-30007",
+            "line": 1178,
+            "parent_pn": "AS-40082",
+            "quantity": "6"
+          }
+        ]
+      }
+    ],
+    "invalid_quantities": [],
+    "normalized_duplicate_surplus": 40,
+    "quantity_conflicts": [],
+    "quantity_distribution": {
+      "1": 660,
+      "10": 35,
+      "11": 30,
+      "12": 45,
+      "2": 188,
+      "3": 37,
+      "4": 110,
+      "5": 36,
+      "6": 33,
+      "7": 32,
+      "8": 41,
+      "9": 40
+    },
+    "self_edges": [],
+    "unique_pairs": 1247
+  },
+  "files": {
+    "bom": {
+      "blank_cells": {},
+      "exact_duplicate_surplus": 40,
+      "headers": [
+        "parent_pn",
+        "child_pn",
+        "quantity"
+      ],
+      "malformed_rows": [],
+      "rows": 1287,
+      "sha256": "4c35a262ea4c9e9b095056bf4cbf79bc07b126aefe26a18afb0ff0a663bec6cf"
+    },
+    "parts_master": {
+      "blank_cells": {},
+      "exact_duplicate_surplus": 0,
+      "headers": [
+        "part_number",
+        "revision",
+        "description",
+        "category",
+        "unit_cost"
+      ],
+      "malformed_rows": [],
+      "rows": 950,
+      "sha256": "6e82f21fb97aeea090204ad38722f6eaa6039fcae61ea33f56b6d40a760cfbc9"
+    },
+    "service_parts": {
+      "blank_cells": {
+        "serial_from": 771,
+        "serial_to": 771
+      },
+      "exact_duplicate_surplus": 0,
+      "headers": [
+        "part_number",
+        "field_replaceable",
+        "serial_from",
+        "serial_to"
+      ],
+      "malformed_rows": [],
+      "rows": 854,
+      "sha256": "209d265e2cb67140c2b4fabbaaa66d6e45d86f8a4860ad36e255f3cd0b840bc5"
+    }
+  },
+  "graph": {
+    "all_cycle_components": [
+      [
+        "AS-40002",
+        "AS-40208",
+        "AS-40209"
+      ]
+    ],
+    "excluded_outside_parent_edges": [
+      {
+        "child": "EL-10336",
+        "parent": "AS-40210",
+        "quantity": 1
+      },
+      {
+        "child": "EL-10337",
+        "parent": "AS-40210",
+        "quantity": 1
+      },
+      {
+        "child": "FA-30022",
+        "parent": "AS-40210",
+        "quantity": 5
+      },
+      {
+        "child": "ME-20307",
+        "parent": "AS-40210",
+        "quantity": 1
+      },
+      {
+        "child": "ME-20308",
+        "parent": "AS-40210",
+        "quantity": 1
+      }
+    ],
+    "largest_path_counts": [
+      [
+        "FA-30019",
+        22
+      ],
+      [
+        "FA-30002",
+        21
+      ],
+      [
+        "FA-30009",
+        21
+      ],
+      [
+        "FA-30018",
+        21
+      ],
+      [
+        "FA-30021",
+        20
+      ],
+      [
+        "FA-30014",
+        19
+      ],
+      [
+        "FA-30016",
+        19
+      ],
+      [
+        "FA-30023",
+        19
+      ],
+      [
+        "FA-30008",
+        18
+      ],
+      [
+        "FA-30001",
+        17
+      ]
+    ],
+    "largest_quantities": [
+      [
+        "FA-30019",
+        178
+      ],
+      [
+        "FA-30018",
+        148
+      ],
+      [
+        "FA-30009",
+        144
+      ],
+      [
+        "FA-30014",
+        141
+      ],
+      [
+        "FA-30023",
+        138
+      ],
+      [
+        "FA-30010",
+        133
+      ],
+      [
+        "FA-30001",
+        132
+      ],
+      [
+        "FA-30002",
+        132
+      ],
+      [
+        "FA-30013",
+        127
+      ],
+      [
+        "FA-30021",
+        121
+      ]
+    ],
+    "max_depth_edges": 6,
+    "missing_master": [
+      "EL-10024",
+      "EL-10035",
+      "EL-10069",
+      "EL-10081",
+      "EL-10097",
+      "EL-10128",
+      "EL-10135",
+      "EL-10219",
+      "EL-10230",
+      "EL-10280",
+      "EL-10282",
+      "EL-10290",
+      "EL-10295",
+      "EL-10317",
+      "ME-20032",
+      "ME-20054",
+      "ME-20057",
+      "ME-20176",
+      "ME-20185",
+      "ME-20193",
+      "ME-20246",
+      "ME-20281",
+      "ME-20283",
+      "ME-20286",
+      "ME-20291"
+    ],
+    "missing_service": [
+      "AS-40000",
+      "EL-10024",
+      "EL-10035",
+      "EL-10069",
+      "EL-10081",
+      "EL-10097",
+      "EL-10128",
+      "EL-10135",
+      "EL-10219",
+      "EL-10230",
+      "EL-10280",
+      "EL-10282",
+      "EL-10290",
+      "EL-10295",
+      "EL-10317",
+      "ME-20032",
+      "ME-20054",
+      "ME-20057",
+      "ME-20176",
+      "ME-20185",
+      "ME-20193",
+      "ME-20246",
+      "ME-20281",
+      "ME-20283",
+      "ME-20286",
+      "ME-20291"
+    ],
+    "multiple_path_parts": 24,
+    "outside_machine_all_sources": [
+      "AS-40210",
+      "EL-10336",
+      "EL-10337",
+      "ME-20307",
+      "ME-20308"
+    ],
+    "outside_machine_bom": [
+      "AS-40210",
+      "EL-10336",
+      "EL-10337",
+      "ME-20307",
+      "ME-20308"
+    ],
+    "outside_machine_master": [
+      "AS-40210",
+      "EL-10336",
+      "EL-10337",
+      "ME-20307",
+      "ME-20308"
+    ],
+    "outside_machine_service": [
+      "AS-40210",
+      "EL-10336",
+      "EL-10337",
+      "ME-20307",
+      "ME-20308"
+    ],
+    "post_repair_topological_nodes": 875,
+    "raw_bom_nodes": 880,
+    "reachable_parts": 875,
+    "removed_back_edges": [
+      {
+        "child": "AS-40002",
+        "lines": [
+          55
+        ],
+        "parent": "AS-40209",
+        "root_path": [
+          "AS-40000",
+          "AS-40001",
+          "AS-40002",
+          "AS-40208",
+          "AS-40209"
+        ]
+      }
+    ],
+    "repair_same_in_both_orders": true,
+    "reverse_order_removed_back_edges": [
+      {
+        "child": "AS-40002",
+        "lines": [
+          55
+        ],
+        "parent": "AS-40209",
+        "root_path": [
+          "AS-40000",
+          "AS-40001",
+          "AS-40002",
+          "AS-40208",
+          "AS-40209"
+        ]
+      }
+    ],
+    "root_master_rows": [
+      {
+        "category": "Assembly",
+        "description": "AM-700 bottling line",
+        "line": 462,
+        "part_number": "AS-40000",
+        "revision": "A",
+        "unit_cost": "452.66"
+      }
+    ],
+    "root_service_rows": [],
+    "service_missing_master": [],
+    "status_projection": {
+      "missing": 25,
+      "not_replaceable": 367,
+      "ready": 483
+    }
+  },
+  "master": {
+    "invalid_costs": [],
+    "invalid_revisions": [],
+    "multiple_revision_parts": {
+      "AS-40005": [
+        "A",
+        "B"
+      ],
+      "AS-40008": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40011": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40023": [
+        "A",
+        "B"
+      ],
+      "AS-40029": [
+        "A",
+        "B"
+      ],
+      "AS-40043": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40046": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40048": [
+        "A",
+        "B"
+      ],
+      "AS-40049": [
+        "A",
+        "B"
+      ],
+      "AS-40050": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40055": [
+        "A",
+        "B"
+      ],
+      "AS-40058": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40084": [
+        "A",
+        "B"
+      ],
+      "AS-40086": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40088": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40093": [
+        "A",
+        "B"
+      ],
+      "AS-40110": [
+        "A",
+        "B"
+      ],
+      "AS-40111": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40115": [
+        "A",
+        "B"
+      ],
+      "AS-40118": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40136": [
+        "A",
+        "B"
+      ],
+      "AS-40160": [
+        "A",
+        "B",
+        "C"
+      ],
+      "AS-40184": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10019": [
+        "A",
+        "B"
+      ],
+      "EL-10056": [
+        "A",
+        "B"
+      ],
+      "EL-10074": [
+        "A",
+        "B"
+      ],
+      "EL-10107": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10114": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10134": [
+        "A",
+        "B"
+      ],
+      "EL-10186": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10204": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10208": [
+        "A",
+        "B"
+      ],
+      "EL-10222": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10232": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10250": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10262": [
+        "A",
+        "B"
+      ],
+      "EL-10271": [
+        "A",
+        "B",
+        "C"
+      ],
+      "EL-10298": [
+        "A",
+        "B"
+      ],
+      "EL-10333": [
+        "A",
+        "B"
+      ],
+      "FA-30012": [
+        "A",
+        "B"
+      ],
+      "FA-30022": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20012": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20039": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20062": [
+        "A",
+        "B"
+      ],
+      "ME-20065": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20071": [
+        "A",
+        "B"
+      ],
+      "ME-20076": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20096": [
+        "A",
+        "B"
+      ],
+      "ME-20110": [
+        "A",
+        "B"
+      ],
+      "ME-20113": [
+        "A",
+        "B"
+      ],
+      "ME-20119": [
+        "A",
+        "B"
+      ],
+      "ME-20120": [
+        "A",
+        "B"
+      ],
+      "ME-20137": [
+        "A",
+        "B"
+      ],
+      "ME-20150": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20156": [
+        "A",
+        "B"
+      ],
+      "ME-20188": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20197": [
+        "A",
+        "B"
+      ],
+      "ME-20201": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20206": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20240": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20260": [
+        "A",
+        "B"
+      ],
+      "ME-20289": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ME-20303": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "revision_distribution": {
+      "A": 855,
+      "B": 63,
+      "C": 32
+    },
+    "same_revision_duplicates": [],
+    "unique_parts": 855
+  },
+  "normalization": {
+    "changed_cells": [
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 27,
+        "normalized": "AS-40133",
+        "raw": " AS-40133"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 96,
+        "normalized": "AS-40100",
+        "raw": "as-40100"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 101,
+        "normalized": "FA-30013",
+        "raw": "fa-30013 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 135,
+        "normalized": "FA-30015",
+        "raw": "fa-30015 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 177,
+        "normalized": "FA-30012",
+        "raw": "fa-30012 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 227,
+        "normalized": "EL-10177",
+        "raw": " EL-10177"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 371,
+        "normalized": "ME-20046",
+        "raw": "me-20046 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 375,
+        "normalized": "EL-10037",
+        "raw": "el-10037"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 421,
+        "normalized": "ME-20295",
+        "raw": "me-20295 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 595,
+        "normalized": "ME-20190",
+        "raw": " ME-20190"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 672,
+        "normalized": "EL-10223",
+        "raw": " EL-10223"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 759,
+        "normalized": "EL-10209",
+        "raw": " EL-10209"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 801,
+        "normalized": "EL-10120",
+        "raw": " EL-10120"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 949,
+        "normalized": "FA-30023",
+        "raw": "fa-30023 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1083,
+        "normalized": "FA-30011",
+        "raw": "fa-30011"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1110,
+        "normalized": "AS-40036",
+        "raw": "as-40036 "
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1145,
+        "normalized": "FA-30018",
+        "raw": "fa-30018"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1186,
+        "normalized": "FA-30021",
+        "raw": "fa-30021"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1221,
+        "normalized": "FA-30008",
+        "raw": "fa-30008"
+      },
+      {
+        "column": "child_pn",
+        "file": "bom",
+        "line": 1236,
+        "normalized": "FA-30009",
+        "raw": " FA-30009"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 25,
+        "normalized": "AS-40024",
+        "raw": "as-40024"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 64,
+        "normalized": "AS-40063",
+        "raw": "as-40063"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 82,
+        "normalized": "AS-40081",
+        "raw": "as-40081"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 120,
+        "normalized": "AS-40119",
+        "raw": "as-40119"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 137,
+        "normalized": "AS-40136",
+        "raw": "as-40136"
+      },
+      {
+        "column": "part_number",
+        "file": "service_parts",
+        "line": 430,
+        "normalized": "EL-10227",
+        "raw": "el-10227"
+      }
+    ],
+    "changed_cells_by_file": {
+      "bom": 20,
+      "service_parts": 6
+    },
+    "unexpected_pn_format": [],
+    "variant_groups": {
+      "AS-40024": [
+        "AS-40024",
+        "as-40024"
+      ],
+      "AS-40036": [
+        "AS-40036",
+        "as-40036 "
+      ],
+      "AS-40063": [
+        "AS-40063",
+        "as-40063"
+      ],
+      "AS-40081": [
+        "AS-40081",
+        "as-40081"
+      ],
+      "AS-40100": [
+        "AS-40100",
+        "as-40100"
+      ],
+      "AS-40119": [
+        "AS-40119",
+        "as-40119"
+      ],
+      "AS-40133": [
+        " AS-40133",
+        "AS-40133"
+      ],
+      "AS-40136": [
+        "AS-40136",
+        "as-40136"
+      ],
+      "EL-10037": [
+        "EL-10037",
+        "el-10037"
+      ],
+      "EL-10120": [
+        " EL-10120",
+        "EL-10120"
+      ],
+      "EL-10177": [
+        " EL-10177",
+        "EL-10177"
+      ],
+      "EL-10209": [
+        " EL-10209",
+        "EL-10209"
+      ],
+      "EL-10223": [
+        " EL-10223",
+        "EL-10223"
+      ],
+      "EL-10227": [
+        "EL-10227",
+        "el-10227"
+      ],
+      "FA-30008": [
+        "FA-30008",
+        "fa-30008"
+      ],
+      "FA-30009": [
+        " FA-30009",
+        "FA-30009"
+      ],
+      "FA-30011": [
+        "FA-30011",
+        "fa-30011"
+      ],
+      "FA-30012": [
+        "FA-30012",
+        "fa-30012 "
+      ],
+      "FA-30013": [
+        "FA-30013",
+        "fa-30013 "
+      ],
+      "FA-30015": [
+        "FA-30015",
+        "fa-30015 "
+      ],
+      "FA-30018": [
+        "FA-30018",
+        "fa-30018"
+      ],
+      "FA-30021": [
+        "FA-30021",
+        "fa-30021"
+      ],
+      "FA-30023": [
+        "FA-30023",
+        "fa-30023 "
+      ],
+      "ME-20046": [
+        "ME-20046",
+        "me-20046 "
+      ],
+      "ME-20190": [
+        " ME-20190",
+        "ME-20190"
+      ],
+      "ME-20295": [
+        "ME-20295",
+        "me-20295 "
+      ]
+    }
+  },
+  "purpose": "Phase 1 observations; proposed normalization and graph analysis, not verified API results",
+  "service": {
+    "duplicate_part_groups": {},
+    "flag_distribution": {
+      "N": 369,
+      "Y": 485
+    },
+    "range_issues": [],
+    "range_kinds": {
+      "bounded": 83,
+      "unbounded": 771
+    },
+    "range_pairs": [
+      {
+        "from": "1000",
+        "rows": 16,
+        "to": "1999"
+      },
+      {
+        "from": "1000",
+        "rows": 23,
+        "to": "2999"
+      },
+      {
+        "from": "2000",
+        "rows": 24,
+        "to": "9999"
+      },
+      {
+        "from": "3000",
+        "rows": 20,
+        "to": "9999"
+      }
+    ],
+    "unique_parts": 854
+  }
+}
