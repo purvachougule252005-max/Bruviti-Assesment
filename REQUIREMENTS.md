@@ -62,7 +62,7 @@ Final local status: implementation and available verification complete. Evidence
 - [x] NOTES.md: concise one-page-length decisions, scope cuts, and next steps (under 300 words).
 - [x] AI.md: actual AI/tool uses across all five phases recorded.
 - [x] `tests/` contains meaningful engine and HTTP tests runnable without external network access. Windows internal socket pairs are permitted; application connections remain blocked.
-- [x] Generalization verified using 20 generated exports and an independent path-enumeration oracle; supplied CSVs unchanged. Final suite: 155 passed in both development and clean-clone environments.
+- [x] Generalization verified using 20 generated exports and an independent path-enumeration oracle; supplied CSVs unchanged. Final suite: 165 passed in both development and clean-clone environments (155 baseline + 10 targeted audit regression tests).
 - [x] Startup checked in a fresh local clone/new virtual environment; documented limits include reused OS/Python/pip cache, no Linux/macOS check, and no physical adapter disconnection.
 - [x] Check tracked files for secret patterns, virtual environments, and files over 50 MB; evidence in `audit/phase5-packaging.json`. Pattern checks found no credentials; this is not a guarantee of exhaustive secret detection.
 - [x] Final checklist, verification record, and `WALKTHROUGH.md` completed; actual test failure/recovery and unperformed checks disclosed.

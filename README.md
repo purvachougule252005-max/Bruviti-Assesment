@@ -82,7 +82,7 @@ Dependency installation may use the network. Once dependencies are installed, th
 
 The documented `pytest -q` command works from a fresh clone. For a custom `--basetemp`, create its parent directory first and use a dedicated location because pytest manages its contents. This Windows execution sandbox blocks the async loop's internal loopback connection, so verification ran outside that sandbox; the test network guard remained enabled.
 
-Final suite: **155 passed**, including 20 generated exports checked through HTTP against independent forward path enumeration. It also passed in the clean clone (5.94 seconds). Browser interactions and phone/desktop layouts were checked; see `audit/phase4-verification.md`.
+Final suite: **165 passed**, including 20 generated exports checked through HTTP against independent forward path enumeration and 10 targeted audit regression tests. It also passed in the clean clone. Browser interactions and phone/desktop layouts were checked; see `audit/phase4-verification.md`.
 
 ## Verification and its limits
 

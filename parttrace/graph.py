@@ -66,7 +66,7 @@ def repair_hierarchy(
         for p in graph:
             if p == root:
                 continue
-            common = set.intersection(*(dominators[parent] for parent in parents[p]))
+            common = set.intersection(*(dominators[parent] for parent in parents[p])) if parents[p] else set()
             updated = common | {p}
             if updated != dominators[p]:
                 dominators[p] = updated

@@ -73,6 +73,8 @@ def _read_csv(path: Path, diagnostics: list[Diagnostic]) -> list[Row]:
     try:
         with path.open(encoding="utf-8-sig", newline="") as handle:
             reader = csv.DictReader(handle, strict=True)
+            if reader.fieldnames is not None:
+                reader.fieldnames = [f.strip() for f in reader.fieldnames]
             expected = SCHEMAS[path.name]
             if (reader.fieldnames is None or len(reader.fieldnames) != len(expected)
                     or set(reader.fieldnames) != set(expected)):
@@ -128,7 +130,7 @@ def _master_record(rows: list[Row], diagnostics: list[Diagnostic]) -> tuple[str 
             diagnostics.append(Diagnostic("invalid_unused_cost", "Invalid unit_cost; not used by the required catalogue", (row.source,)))
     latest = max(revisions)
     for revision, versions in sorted(revisions.items()):
-        descriptions = {row.values["description"] for row in versions}
+        descriptions = {row.values["description"].strip() for row in versions}
         if len(descriptions) > 1 and revision == latest:
             _fail(f"Conflicting descriptions at selected revision {latest}", versions)
         if len(versions) > 1:

@@ -32,3 +32,12 @@ The final suite passed 135 tests; JavaScript syntax checks and source-hash compa
 Codex added the cross-platform Python startup launcher, generated-export HTTP tests using an independent forward-path oracle, and a real HTTP latency/offline verification script. It ran 155 tests successfully in the development checkout and a fresh local clone, measured 1,963 requests with server outbound calls blocked, checked source-byte preservation, and tested clean installation/startup and an installed restart with package-index access disabled. An initial custom pytest temporary-path invocation failed with setup errors; the documented default-temp command passed, as recorded in the audit.
 
 Codex initialized and committed the local Git repository using the user's existing Git identity, created an ignored temporary local clone, installed dependencies there, checked package consistency, reviewed tracked-file sizes/secret patterns, and finalized the checklist, documentation, and walkthrough. It reread the supplied brief locally using the PDF tooling and consulted the local preview teardown instructions. No additional AI model, subagent, external catalogue data, remote repository, invitation, publication, or submission was used. Test data is synthetic verification input only; all product explanations remain deterministic.
+
+## Phase 6 — Audit Evaluation & Regression Hardening
+
+Senior engineering review of audit risks against `use_case_5_parts_catalogue_api.pdf` (Sections 3–6 and Appendix Q):
+1. Evaluated conflicting input records: confirmed no universal tie-breaking heuristic exists in the specification; preserved deterministic startup validation with diagnostic error reporting for ambiguous conflicts.
+2. Verified revision selection: strictly preserved Appendix Q highest-letter ordering (A-Z) without speculative numeric or custom sorting.
+3. Hardened CSV parsing and dominator graph repair: trimmed whitespace on CSV headers to support padded replacement schemas, trimmed whitespace in description comparisons to avoid false conflict errors on trailing spaces, and guarded dominator intersection against empty parents.
+4. Preserved full, sorted path enumeration without arbitrary caps and confirmed decimal serial strings return 422 (4xx).
+5. Added 10 targeted regression tests in `tests/test_audit_regressions.py` bringing the test suite to 165 passed tests (0 failed). Verified 36 live HTTP endpoint scenarios (<132ms latency). Confirmed byte-level preservation of original CSV data.
